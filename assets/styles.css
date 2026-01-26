@@ -98,3 +98,7 @@ h1{margin:0 0 10px; font-size: clamp(28px, 5vw, 44px)}
   font-size:.9rem;
   text-align:center;
 }
+
+a { color: var(--accent); }
+a:hover { filter: brightness(1.1); }
+.card { font-size: 1.02rem; }
