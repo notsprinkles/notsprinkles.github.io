@@ -1,34 +1,53 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jea Laraia — Security Blog</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Human Attack Surface (HAS)</title>
+  <meta name="description" content="Human Attack Surface (HAS) research: experiments in social engineering, behavioral security, and human failure modes." />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">HAS</a>
+      <nav class="nav">
+        <a href="./">Home</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="experiments.html">Experiments</a>
+      </nav>
+    </div>
+  </header>
 
-<body style="font-family: system-ui; max-width: 720px; margin: 40px auto; padding: 0 16px;">
+  <main class="wrap">
+    <section class="hero">
+      <h1>Human Attack Surface (HAS)</h1>
+      <p class="lede">
+        A living research log on how human behavior, context, and trust dynamics create security risk.
+        Observation-first. Defensive intent. No drama.
+      </p>
 
-  <h1>Jea Laraia</h1>
+      <div class="cta-row">
+        <a class="btn" href="methodology.html">Read the methodology</a>
+        <a class="btn ghost" href="experiments.html">Browse experiments</a>
+      </div>
+    </section>
 
-  <p>
-    Cloud security student (finishing May 2026) focused on human-factor security,
-    social engineering awareness, and real-world security failures.
-  </p>
+    <section class="card">
+      <h2>What this is</h2>
+      <p>
+        I publish my own experiments and experiences using the HAS framework, focusing on real-world human failure modes
+        and how to defend against them.
+      </p>
+    </section>
 
-  <h2>Blog</h2>
-  <ul>
-    <li>
-      <a href="posts/human-layer.html">
-        Why the Human Layer Still Breaks Security
-      </a>
-    </li>
-  </ul>
+    <footer class="footer">
+      <p>© <span id="y"></span> • HAS Research</p>
+    </footer>
+  </main>
 
-  <h2>Ethics</h2>
-  <p>
-    All content is anonymized, non-reproducible, and shared for defensive
-    awareness and training only.
-  </p>
-
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
