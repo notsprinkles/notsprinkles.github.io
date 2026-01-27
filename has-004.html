@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HAS-004 • Shared Secrets and Tool-Mediated Trust</title>
+  <meta name="description" content="HAS-004 examines how shared credentials and community-built security tools normalize unsafe authentication behavior." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">HAS</a>
+      <nav class="nav">
+        <a href="./">Home</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="experiments.html">Experiments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>HAS-004</h1>
+      <p class="lede">Shared Secrets and Tool-Mediated Trust</p>
+    </section>
+
+    <section class="card">
+      <h2>Framework</h2>
+      <p>Human Attack Surface (HAS)</p>
+    </section>
+
+    <section class="card">
+      <h2>Context (abstracted)</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        <strong>Environment:</strong> Online community with role-based access<br/>
+        <strong>Medium:</strong> Chat platform + third-party tooling<br/>
+        <strong>Relationship state:</strong> Member granted functional responsibility<br/>
+        <strong>Security model:</strong> Shared credentials distributed via a community-built password manager
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Hypothesis</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        When access is framed as collaboration rather than privilege, security controls are experienced
+        as obstacles. Communities normalize unsafe authentication practices when participation requires
+        shared secrets and externally built trust tooling.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Observations</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Participation in certain roles required access to shared credentials. Access was mediated through
+        a password manager application created by a member of the same community.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Individuals were required to create personal accounts for the password manager in order to
+        retrieve shared secrets. This introduced a secondary authentication layer unrelated to the
+        original systems being accessed.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Because multiple participants required access, credential sharing was treated as routine rather
+        than exceptional. Concerns about password reuse or account hygiene were implicitly deprioritized
+        in favor of maintaining workflow continuity.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Trigger Conditions</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        <strong>Role pressure:</strong> Access was necessary to fulfill assigned responsibilities.<br/>
+        <strong>Tool trust transfer:</strong> Trust in the tool creator substituted for independent evaluation.<br/>
+        <strong>Normalization:</strong> Widespread participation made the practice appear standard and safe.<br/>
+        <strong>Time pressure:</strong> Immediate access needs discouraged scrutiny or alternative solutions.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Human Factors Identified</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Compliance under responsibility • password reuse pressure • authority by contribution • trust externalization •
+        normalization of risk • workflow prioritization
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Systemic Failure Mode</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        The failure was structural rather than technical. Security responsibilities were distributed without
+        corresponding guardrails. By embedding shared secrets inside community-built tooling, risk ownership
+        became diffuse and difficult to challenge without social friction.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Defensive Implications</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Shared credentials should be treated as temporary exceptions, not baseline access mechanisms.
+        Communities should prefer role-based access controls, per-user credentials, and auditable permission
+        boundaries.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Tooling created within a community should undergo the same scrutiny as external tools. Trust in
+        contributors should not replace threat modeling, and participation should never require degrading
+        personal security hygiene.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Ethical Notes</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        No identifying details are included. No vulnerabilities or exploit paths are described. This
+        experiment documents first-person experience and is published solely for defensive awareness
+        and security education.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="y"></span> • Human Attack Surface Research</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
