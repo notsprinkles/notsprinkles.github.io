@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Patterns Across HAS-001–007 • Human Attack Surface</title>
+  <meta name="description" content="A synthesis of recurring human attack surface patterns observed across HAS-001 through HAS-007." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">HAS</a>
+      <nav class="nav">
+        <a href="./">Home</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="experiments.html">Experiments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Patterns Across HAS-001–007</h1>
+      <p class="lede">
+        A synthesis of recurring human attack surface mechanisms observed across seven experiments.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Purpose of this synthesis</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Individually, HAS experiments document specific situations. Collectively, they reveal
+        repeatable patterns in how humans interact with systems, authority, and social environments.
+        This synthesis extracts those patterns without reference to individual incidents.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Pattern 1 — Trust Transfers Faster Than Verification</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Across HAS-001 and subsequent experiments, trust consistently crossed boundaries more
+        quickly than verification. Introductions, community adjacency, and shared context acted
+        as substitutes for independent validation.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Once trust was inherited, later interactions were evaluated for consistency rather than
+        legitimacy.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Pattern 2 — Belonging Pressure Alters Risk Perception</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        HAS-002 and HAS-007 demonstrate how visible norms and mission framing shift behavior.
+        Actions feel safer when they align with group identity, even when they increase exposure
+        or cost.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        The fear of standing out often outweighs abstract security concerns.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Pattern 3 — Aggregation Creates Risk Where None Appears Individually</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        HAS-003 highlights how small, friendly disclosures accumulate into meaningful identity
+        profiles. Each data point feels harmless alone; together they expand the attack surface.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Humans struggle to perceive aggregation risk, especially in learning or onboarding contexts.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Pattern 4 — Responsibility Normalizes Unsafe Practices</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        HAS-004 shows how being “needed” compresses security decision-making. When access enables
+        contribution, unsafe practices become justified as temporary or necessary.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Risk is reframed as professionalism or teamwork.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Pattern 5 — Authority Works Best When It Is Unclear</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        HAS-005 demonstrates that ambiguity amplifies authority. When rules and consequences are
+        implied rather than stated, individuals self-censor and comply preemptively.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        The behavioral effect occurs before any explicit instruction is given.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Pattern 6 — Attention Can Be Shaped Without Direction</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        HAS-006 reveals how repeated exposure across contexts primes salience. Concepts become
+        cognitively dominant without being designated as important.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        In multi-channel environments, repetition alone can steer focus and urgency.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Pattern 7 — Ethical Boundaries Compress Under Escalating Norms</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        HAS-007 shows how moral evaluation shifts when success is framed as existential.
+        Over time, refusal becomes socially costly and extreme actions are reframed as loyalty.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Ethical drift occurs without formal approval or explicit commands.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Cross-cutting insight</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Across all experiments, the most significant failures occurred not at the technical layer,
+        but at the human interpretation layer. Systems failed where assumptions replaced clarity,
+        and where social context substituted for explicit safeguards.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Implications for defense and design</h2>
+      <ul style="color:var(--muted); line-height:1.7">
+        <li>Trust boundaries should be explicit and reset across contexts</li>
+        <li>Norms should be labeled as optional or required</li>
+        <li>Aggregation risk must be taught directly</li>
+        <li>Shared responsibility should not require shared secrets</li>
+        <li>Authority should be documented, not implied</li>
+        <li>Repetition should not substitute for relevance</li>
+        <li>Ethical refusal must be normalized and protected</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Closing note</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Human attack surfaces are rarely exploited through deception alone. More often, they
+        emerge through normal social behavior operating inside systems that lack clarity,
+        friction, and explicit boundaries.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="y"></span> • Human Attack Surface Research</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
