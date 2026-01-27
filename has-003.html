@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HAS-003 • Prompted Self-Disclosure and OSINT Surface Expansion</title>
+  <meta name="description" content="HAS-003 examines how friendly prompts and onboarding-style projects can expand OSINT surface area through voluntary self-disclosure." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">HAS</a>
+      <nav class="nav">
+        <a href="./">Home</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="experiments.html">Experiments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>HAS-003</h1>
+      <p class="lede">Prompted Self-Disclosure and OSINT Surface Expansion</p>
+    </section>
+
+    <section class="card">
+      <h2>Framework</h2>
+      <p>Human Attack Surface (HAS)</p>
+    </section>
+
+    <section class="card">
+      <h2>Context (abstracted)</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        <strong>Environment:</strong> casual learning / mentorship interaction<br/>
+        <strong>Medium:</strong> chat + collaborative build (“all about me” style page)<br/>
+        <strong>Relationship state:</strong> learner seeking guidance from a more experienced peer<br/>
+        <strong>Data type:</strong> biographical trivia and “security question–adjacent” details
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Hypothesis</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Friendly onboarding prompts (especially in learning contexts) normalize the disclosure of personal details.
+        When aggregated, these details expand OSINT surface area and can unintentionally resemble password-recovery
+        signals or future authentication hints.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Observations</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        A project framed as harmless and fun (“all about me”) used prompts that invited specific personal facts:
+        names, preferences, favorites, and identity-adjacent details. The tone was casual and instructional, and the
+        activity felt like normal beginner practice rather than data collection.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Because the prompts were presented as standard onboarding content, each answer felt low-risk in isolation.
+        The risk became visible only when considering how easily the information could be aggregated, searched, or
+        re-used as verification “facts” in other contexts.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Trigger Conditions</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        <strong>Authority gradient:</strong> guidance coming from someone positioned as a teacher/mentor increased compliance.<br/>
+        <strong>Play framing:</strong> “fun” prompts reduced perceived threat and lowered scrutiny.<br/>
+        <strong>Chunking effect:</strong> many small disclosures felt harmless, but combined into a meaningful profile.<br/>
+        <strong>Future visibility:</strong> publishing or sharing artifacts makes private trivia searchable and persistent.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Human Factors Identified</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Compliance under instruction • harmlessness bias • aggregation blindness • authority effect • persistence neglect
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Systemic Failure Mode</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        The failure is not technical—it's a design and culture gap. Beginner projects often treat personal trivia as
+        “safe demo data,” even though many systems and communities still use personal facts as identity anchors.
+        The learning objective (practice forms/inputs/UI) unintentionally trains disclosure habits that generalize.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Defensive Implications</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Replace real personal facts with safe placeholders in tutorials (“favorite color” becomes “favorite IDE theme”,
+        names become “Sample User A”). Treat “all about me” prompts as production-grade data collection: minimize,
+        abstract, and avoid security-question-adjacent facts entirely.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Communities and instructors should explicitly teach the concept of aggregation risk: individual facts feel
+        harmless, but bundles become identifiers. When publishing portfolios or demo apps, use fictional profiles.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Ethical Notes</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        No identifying details are included. No tactics are provided to target individuals. This experiment documents
+        first-person observations and is published solely for defensive awareness and education.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="y"></span> • Human Attack Surface Research</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
