@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HAS-008 • Third-Party Digital Behavior and Physical Boundary Collapse</title>
+  <meta name="description" content="HAS-008 examines how untrained third-party digital behavior can unintentionally collapse physical security boundaries within controlled facilities." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">HAS</a>
+      <nav class="nav">
+        <a href="./">Home</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="experiments.html">Experiments</a>
+        <a href="has-001-007.html">Synthesis</a>
+        <a href="services.html">Services</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>HAS-008</h1>
+      <p class="lede">Third-Party Digital Behavior and Physical Boundary Collapse</p>
+    </section>
+
+    <section class="card">
+      <h2>Framework</h2>
+      <p>Human Attack Surface (HAS)</p>
+    </section>
+
+    <section class="card">
+      <h2>Context (abstracted)</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        <strong>Environment:</strong> controlled physical facility<br/>
+        <strong>Participants:</strong> third-party vendor present onsite<br/>
+        <strong>Medium:</strong> live video communication with a trusted remote contact<br/>
+        <strong>Condition:</strong> no malicious intent; no explicit policy reminder at point of action
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Hypothesis</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        When third-party vendors are not explicitly trained on digital behavior within physical
+        facilities, digital trust can unintentionally override physical security awareness.
+        The result is incidental exposure of sensitive environments without deliberate access
+        or malicious intent.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Example (anonymized)</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        A third-party vendor performing routine work inside a controlled facility engaged in a
+        live video call with a trusted remote contact. The call was informal and unrelated to the
+        facility itself.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        While moving through the space, the vendor continued the call without awareness that
+        the camera captured operational areas and contextual details of the environment.
+        No systems were accessed, no credentials were shared, and no policy was knowingly violated.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        The exposure occurred solely through visual and contextual leakage — enabled by familiarity,
+        trust, and the absence of explicit guidance regarding video communication inside the facility.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Failure Mode</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        The failure did not occur at the technical or access-control layer. It occurred at the
+        boundary between digital behavior and physical space. Digital trust relationships were
+        unconsciously extended into a physical environment that relied on assumed vigilance.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Root Causes</h2>
+      <ul style="color:var(--muted); line-height:1.7">
+        <li>Third-party vendors not embedded in internal security culture</li>
+        <li>No explicit prohibition or guidance regarding live video calls onsite</li>
+        <li>Assumption that “common sense” would prevent exposure</li>
+        <li>False perception that being on a call is a neutral or harmless activity</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Human Factors Identified</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Familiarity bias • trust transfer • task fixation • environmental blindness •
+        normalization of video communication • boundary misalignment
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Systemic Failure Mode</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Physical security controls relied on implicit behavioral expectations rather than
+        explicit training. Digital behaviors were not included in the threat model for
+        third-party presence, leaving a gap between policy intent and real-world action.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Defensive Implications</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        Organizations should treat digital behavior as part of physical security. Third-party
+        onboarding must explicitly address video calls, screen sharing, and remote communication
+        while onsite.
+      </p>
+      <p style="color:var(--muted); line-height:1.7">
+        Simple controls — such as clear signage, vendor briefings, and explicit “no video” zones —
+        significantly reduce this class of exposure. Assumed vigilance is not a control; training is.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Ethical Notes</h2>
+      <p style="color:var(--muted); line-height:1.7">
+        This case is anonymized and presented solely to illustrate a class of systemic failure.
+        No individuals or organizations are identified. The intent is preventative education,
+        not attribution or critique.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="y"></span> • Human Attack Surface Research</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
